@@ -1,0 +1,3 @@
+The 'ext' directory contains native binaries. Currently, it contains:
+
+- The LWJGL bindings for Windows, Linux, and Mac OS X.
