@@ -15,6 +15,8 @@ class Ball extends Component {
   }
 
   def render(g: Graphics) {
+    g.setAntiAlias(true)
     g.fillOval(x, y, 50, 50)
+    g.drawOval(x, y, 50, 50)
   }
 }
