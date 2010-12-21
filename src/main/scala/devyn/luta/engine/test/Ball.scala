@@ -1,10 +1,11 @@
 package devyn.luta.engine.test
 
-import devyn.luta.engine.core.BasicComponent
+import devyn.luta.engine.core.{BasicComponent,Trackable}
 import scala.math._
 import org.newdawn.slick.Graphics
 
-class Ball extends BasicComponent {
+class Ball extends BasicComponent
+	      with Trackable {
   var x, y: Float = 300
   var acc: Int = 0
 
