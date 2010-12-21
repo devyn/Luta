@@ -1,6 +1,6 @@
 package devyn.luta
 
-import devyn.luta.engine.Scene
+import devyn.luta.engine.core.Scene
 import org.newdawn.slick.AppGameContainer
 import devyn.luta.engine.test.Ball
 

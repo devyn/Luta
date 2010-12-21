@@ -1,10 +1,10 @@
 package devyn.luta.engine.test
 
-import devyn.luta.engine.Component
+import devyn.luta.engine.core.BasicComponent
 import scala.math._
 import org.newdawn.slick.Graphics
 
-class Ball extends Component {
+class Ball extends BasicComponent {
   var x, y: Float = 300
   var acc: Int = 0
 

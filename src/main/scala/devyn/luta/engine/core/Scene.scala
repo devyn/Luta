@@ -1,10 +1,10 @@
-package devyn.luta.engine
+package devyn.luta.engine.core
 
 import org.newdawn.slick.{BasicGame,GameContainer,Graphics}
 import scala.collection.mutable.ListBuffer
 
 abstract class Scene(name: String) extends BasicGame(name) {
-  val components = new ListBuffer[Component]
+  val components = new ListBuffer[BasicComponent]
 
   // please override
   def init(gc: GameContainer): Unit
