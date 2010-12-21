@@ -8,7 +8,9 @@ object Main {
   def main(args: Array[String]) {
     val scene = Scene("Test!") { 
       (s, gc) =>
-	s.components += new Ball
+        val b = new Ball(s)
+        s.components += b
+        s.camera.track = Some(b)
     }
     val gc = new AppGameContainer(scene, 800, 600, false)
 
