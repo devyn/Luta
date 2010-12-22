@@ -39,6 +39,8 @@ class Ball(scene: Scene)
 	gP.drawOval(15, 10, 1, 1)
     }
     // Display camera position. Temporary; for debug only.
-    g.drawString((scene.camera.x, scene.camera.y).toString, 50, 50)
+    g.drawString("x: " + scene.camera.x, 50, 50)
+    g.drawString("y: " + scene.camera.y, 50, 65)
+    g.drawString("z: " + scene.camera.z, 50, 80)
   }
 }
