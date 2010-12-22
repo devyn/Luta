@@ -33,9 +33,9 @@ abstract class Scene(name: String) extends BasicGame(name) {
   // temporary, for demo purposes
   override def keyPressed(key: Int, c: Char) {
     if (c == 'z')
-      camera.zTarget = camera.zTarget map ((_:Float) + 10) orElse Some(camera.z + 10)
+      camera.zTarget = camera.zTarget orElse Some(camera.z) map ((_:Float) * 2)
     else if (c == 'x')
-      camera.zTarget = camera.zTarget map ((_:Float) - 10) orElse Some(camera.z - 10)
+      camera.zTarget = camera.zTarget orElse Some(camera.z) map ((_:Float) / 2)
   }
 }
 
